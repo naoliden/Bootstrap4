@@ -13,24 +13,26 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
 
 </head>
 
 <body>
-    <nav class='navbar navbar-dark navbar-expand-sm bg-primary fixed-top'>
+    <nav class='navbar navbar-dark navbar-expand-sm fixed-top'>
         <div class="container">
-            <button class="navbar-toggler" type="button" data-toggle='collapse' data-target='#Navbar'>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class='navbar-brand mr-auto' href="#"> Ristorante Con Fusio</a>
+            <a class="navbar-brand mr-auto" href="./index.html"> Ristorante Con Fusio</a>
                 <!-- con estas clases en <ul> marco para poner links en el navbar horizontalmente-->
                 <!-- mr-auto es para pushear el margin al maximo, se ira al maximo a la izq.     -->
-            <div class="collapse nabvar-collapse" id="Navbar">
+            <div class="collapse navbar-collapse" id="Navbar">
                 <ul class='navbar-nav mr-auto'> 
-                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-                    <li class="nav-item active"><a class="nav-link" href="./aboutus.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./index.html"><span class="fa fa-home fa-lg"></span>Home</a></li>
+                    <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-info fa-lg"></span>About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><span class="fa fa-list fa-lg"></span>Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg"></span>Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -50,7 +52,12 @@
     </header>
 
     <div class='container'>
-        <div>
+        <div class='row'>
+            <ol class='col-12 breadcrumb'>
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class='breadcrumb-item active' >About Us</li>
+                <li class='breadcrumb-item' ><a href="./contactus.html"></a></li>
+            </ol>
             <div class='col-12'>
                 <h3>About Us</h3>
                 <hr>
@@ -90,10 +97,10 @@
                 <div class="col-4 offset-1 col-sm-2">
                     <h5>Links</h5>
                     <ul class="list-unstyled">
-                        <li><a href="#">Home</a></li>
+                        <li><a href="/index.html">Home</a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Menu</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="./contactus.html">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-7 col-sm-5">
