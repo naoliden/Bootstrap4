@@ -46,6 +46,16 @@
 }
 
 .reservation {
-    background: orange;
+    background-color: orange;
+    padding-left: 0px;
+    padding-right: 0px;
     text-indent: 10px;
+    /* color: orange; */
+}
+
+.button {
+    background-color: orange;
+    /* border-radius: 10px; */
+    min-width: auto;
+    height: auto;
 }
