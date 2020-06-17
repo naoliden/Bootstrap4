@@ -63,7 +63,9 @@
                     <!-- media-body es para poner un body al lado de la media que estoy insertando -->
                     <div class="media-body">
                         <!-- mt = margin top = 0 -->
-                        <h2 class="mt-0">Uthappizza</h2>
+                        <h2 class="mt-0">
+                            Uthappizza <span class="badge badge-danger">HOT!</span> <span class="badge badge-pill badge-secondary">$4.99</span>
+                        </h2>
                         <p>A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.</p>
                     </div>
                 </div>
@@ -95,6 +97,56 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <div class="row row-content justify-content-center">
+        <div class="col-8">
+            <h3 class="reservation">Reserve a Table</h3>
+        </div>
+        <div class="col-8">
+            <form>
+                <div class="form-group row">
+                    <label for="guests6" class="col-md-2 col-form-label">Number of Guests</label>
+                    <!-- FIX revisar el largo del sgte div -->
+                    <div class="col-md-6">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests1" value="option1">
+                            <label class="form-check-label" for="guests1">1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests2" value="option2">
+                            <label class="form-check-label" for="guests2">2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests3" value="option3">
+                            <label class="form-check-label" for="guests3">3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests4" value="option4">
+                            <label class="form-check-label" for="guests4">4</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests5" value="option5">
+                            <label class="form-check-label" for="guests5">5</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests6" value="option6">
+                            <label class="form-check-label" for="guests6">6</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label class="col-md-2 col-form-label" for="dateid">Time and Date</label>
+                    <!-- FIX revisar el tamaño del sgte div -->
+                    <div class="col-md-4">
+                        <input class="form-control" type="date" name="date" id="dateid" placeholder="Date...">
+                    </div>
+                    <div class="col-md-3">
+                        <input class="form-control" type="time" name="time" id="timeid" placeholder="Time...">
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 
