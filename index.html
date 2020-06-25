@@ -98,14 +98,91 @@
                         data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
                         data-placenment="bottom"> -->
 
-                    <a class="btn button" role="button" data-toggle="tooltip" data-html="true" href="#reservation_form"
+                    <!-- <a class="btn button" role="button" data-toggle="tooltip" data-html="true" href="#reservation_form"
                         title="Or Call us at <br><strong>+852 12345678</strong>" data-placenment="bottom">
+                        <strong> Reserve Table</strong>
+                    </a> -->
+                    <a class="btn button"  data-toggle="modal"  data-target="#ReservationModal">
                         <strong> Reserve Table</strong>
                     </a>
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="ReservationModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismis="modal">
+                        &times;
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row align-items-center">
+                            <label for="guests1" class="col-md-3">How many guests?</label>
+                            <div class="col-md-6">
+                                <div class="form-check form-check-inline">
+                                    <!-- Los botones de radio tienen que tener el mismo nombre para que solo uno pueda ser seleccionado. -->
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests1" value="option1">
+                                    <label class="form-check-label" for="guests1">1</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests2" value="option2">
+                                    <label class="form-check-label" for="guests2">2</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests3" value="option3">
+                                    <label class="form-check-label" for="guests3">3</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests4" value="option4">
+                                    <label class="form-check-label" for="guests4">4</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests5" value="option5">
+                                    <label class="form-check-label" for="guests5">5</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="guests6" value="option6">
+                                    <label class="form-check-label" for="guests6">6</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="dateid">Section</label>
+                            <div class="col-md-4">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-primary active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking </label>
+                                    <label class="btn btn-secondary">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> Smoking </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label" for="dateid">Date and time?</label>
+                            <div class="col-md-4">
+                                <input class="form-control" type="date" name="date" id="dateid">
+                            </div>
+                            <div class="col-md-3">
+                                <input class="form-control" type="time" name="time" id="timeid">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-md-10">
+                                <button class="btn btn-secondary" type="submit">Cancel</button>
+                                <button class="btn btn-primary" type="submit">Send reservation</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <div class="container">
         <div class="row row-content">
@@ -315,11 +392,11 @@
     <!-- Esto sirve para que funcionen los tooltips
     "wherever thre's an attribute of this kind, turn on the tooltip"
     $(document).ready () significa: cuando el doc este listo para render, do: .... -->
-    <script>
+    <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();
         });
-    </script>
+    </script> -->
 </body>
 
 </html>
