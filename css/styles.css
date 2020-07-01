@@ -81,3 +81,12 @@
     left: 0;
     min-height: 300px;
 }
+
+/* Para el item con el id="carouselButton" */
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    /* border-radius:0px; */
+}

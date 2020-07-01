@@ -187,7 +187,9 @@
     <div class="container">
         <div class="row row-content">
             <div class="col">
-                <div id="mycarousel" class="carousel slide" data-ride="carousel">
+                <!-- El atributo data-ride="carousel" del div de abajo no dejara que use JQuery para manejar el
+                    carousel pq data-ride ya lo esta controlando. Remover. -->
+                <div id="mycarousel" class="carousel slide" >
                     <div class="carousel-inner" role="listbox">
                         <!-- Hacer que se alinee al centro y no queda tan abajo -->
                         <div class="carousel-item active">
@@ -227,6 +229,14 @@
                     <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
                         <span class="carousel-control-next-icon"></span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play"></span>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -388,6 +398,17 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#mycarousel').carousel({ interval: 2000 });
+            $('#carousel-pause').click(function() {
+                $('#mycarousel').carousel('pause');
+            });
+            $('#carousel-play').click(function() {
+                $('#mycarousel').carousel('cycle');
+            });
+        });
+    </script>
 
     <!-- Esto sirve para que funcionen los tooltips
     "wherever thre's an attribute of this kind, turn on the tooltip"
