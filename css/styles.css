@@ -52,3 +52,16 @@ body {
   position: absolute;
   bottom: 0px;
   z-index: 1; }
+
+.button {
+  background-color: orange;
+  /* border-radius: 10px; */
+  min-width: auto;
+  height: auto; }
+
+.reservation {
+  background-color: orange;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-indent: 10px;
+  /* color: orange; */ }
